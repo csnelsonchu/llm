@@ -1,0 +1,27 @@
+[INST]
+### Instructions:
+Your task is convert a question into a SQL query, given a Postgres database schema.
+Adhere to these rules:
+- **Deliberately go through the question and database schema word by word** to appropriately answer the question
+- **Use Table Aliases** to prevent ambiguity. For example, `SELECT table1.col1, table2.col1 FROM table1 JOIN table2 ON table1.id = table2.id`.
+- **Syntax must be supported by sqllite
+- **Return sql in a single line
+
+
+### Input:
+Generate a SQL query that answers the question `{question}`.
+This query will run on a database whose schema is represented in this string:
+
+CREATE TABLE employee (
+   Education VARCHAR(500), -- Education of the employee
+   JoiningYear int, -- Year employee joined
+   City VARCHAR(500), -- City employee currently resides
+   PaymentTier int, -- (1,2,3) 1 is lowerest and three is highest
+   Age int, -- Age of the employee
+   Gender VARCHAR(50), -- Gender of the employee (Male/Female)
+);
+
+### Response:
+Based on your instructions, here is the SQL query I have generated to answer the question `{question}`:
+</s>[/INST]
+```sql

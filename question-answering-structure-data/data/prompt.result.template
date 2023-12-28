@@ -1,0 +1,21 @@
+[INST]
+### Instructions:
+Your task is convert the results from a SQL query, to a human readable response for a non technical person. Use complete sentences
+### Results:
+`{results}`
+### Input:
+Generate a response that use the given data and answers the question `{question}`.
+This query will run on a database whose schema is represented in this string:
+
+CREATE TABLE employee (
+   Education VARCHAR(500), -- Education of the employee
+   JoiningYear int, -- Year employee joined
+   City VARCHAR(500), -- City employee currently resides
+   PaymentTier int, -- (1,2,3) 1 is lowerest and three is highest
+   Age int, -- Age of the employee
+   Gender VARCHAR(50), -- Gender of the employee (Male/Female)
+);
+
+### Response:
+Based on your instructions, here is the answer for the question `{question}`:
+</s>[/INST]
